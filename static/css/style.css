@@ -1,4 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&display=swap');
+
 *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e9e9e9;
+    font-family: 'Fredoka', 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.Sudoku{
+    display: flex;
+    justify-content: center;
+    width: 58vw;
+    margin-left: 3rem;
+    margin-top: 0.3rem;
+}
+
+.Quad{
+    width: 18vw;
+    margin-left: 0.38rem;
+    margin-right: 0.38rem;
+}
+
+.Linha{
+    width: 18vw;
+    margin-top: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Linha input{
+    width: 5vw;
+    height: 8vh;
+    padding: 0.2rem;
+    font-size: 60px;
+    text-align: center;
+    border-radius: 0.2rem;
+    border: none;
+}
+
+.Barra{
+    background-color: #aaa;
+    border-radius: 5rem;
+    width: 100%;
+    height: 1.8vh;
+    margin-top: 0.6rem;
+}
+
+.BarraVertical{
+    background-color: #aaa;
+    width: 8vw;
+    border-radius: 5rem;
+}
+
+
+
+
+/* @media query{
+    *{
     margin: 0;
     padding: 0;
 }
@@ -7,19 +70,39 @@ body{
     background-color: #e2e2e2;
 }
 
-div{
-    width: 32vw;
-    margin-left: 10rem;
+.Sudoku{
+    background-color: yellow;
+    width: 93vw;
+    height: 180vh;
+    margin-left: 4rem;
+    margin-right: 4rem;
     margin-top: 10rem;
+}
+.Quad{
+    background-color: red;
+    width: 31vw;
+}
 
+.Coluna{
+    background-color: aqua;
+    width: 31vw;
+    margin-top: 0.6rem;
     display: flex;
     justify-content: space-between;
 }
 
-div input{
+.Coluna input{
     width: 9vw;
     height: 12vh;
     padding: 0.1rem;
     font-size: 70px;
     text-align: center;
 }
+
+.Barra{
+    background-color: gray;
+    width: 31vw;
+    height: 2vh;
+    margin-top: 0.6rem;
+}
+} */
