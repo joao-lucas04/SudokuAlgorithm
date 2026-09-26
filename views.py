@@ -8,4 +8,4 @@ def homepae():
 
 @app.route("/ResolveSudoku")
 def ResolveSudoku():
-    return "Resolvi o Sudoku"
+    return render_template("resolveSudoku.html")
