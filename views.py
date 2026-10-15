@@ -13,17 +13,16 @@ def ResolveSudoku():
     if request.method == 'POST':
         dados = request.get_json()
         tabuleiro = dados.get('tabuleiro')
-        
+
         if not tabuleiro:
             return jsonify({'erro': 'Nenhum tabuleiro enviado'}), 400
 
-        # Roda o seu algoritmo do resolucao_3.py
+        # Roda o seu algoritmo de resolucao.py
         tabuleiro_resolvido = mainResolveSudoku(tabuleiro)
 
         return jsonify({
-            'status': 'sucesso',
+            'status': 'resolvido',
             'tabuleiro': tabuleiro_resolvido
         })
-
 
     return render_template("resolveSudoku.html")

@@ -10,7 +10,7 @@
     <script src="/static/js/script.js" defer></script>
 </head>
 <body>
-    <form onsubmit="EnviaTabuleiro(event)">
+    <form id="tabuleiroSudoku" onsubmit="EnviaTabuleiro(event)">
         <div class="Sudoku">
             <div class="Quad">
                 <div class="Linha">
@@ -212,9 +212,19 @@
             <div class="Botoes">
                 <input type="submit" value="Resolver" class="btn_padrao" name="btnEnviar" id="res">
                 <input type="reset" value="Limpar" class="btn_padrao" name="btnLimpar" id="lim">
+                <span id="statusmsg" class="mensagem-digite">Digite o Sudoku no Tabuleiro</span>
             </div> 
         </div>
     </form> 
     
+    <div id="modalLimpar" class="modal-fundo">
+        <div class="modal-caixa">
+            <p>Você Realmente Deseja Apagar o Tabuleiro?</p>
+            <div class="modal-botoes">
+                <button id="btnNao" class="btn-modal btn-nao">Cancelar</button>
+                <button id="btnSim" class="btn-modal btn-sim">Apagar</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

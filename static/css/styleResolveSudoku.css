@@ -6,4 +6,119 @@
     background-color: #ff746c; 
 }
 
+.numero-resolvido {
+    color: #0d47a1;          /* O teu texto azul escuro */
+    background-color: #b5e0ff; /* Fundo azul pastel muito suave */
+    font-weight: bold;       /* Texto em destaque */
+    border: 1px solid #90caf5; /* Borda azul clara combinando */
+    border-radius: 4px;      /* Bordinhas levemente arredondadas (opcional) */
+}
 
+.mensagem-sucesso {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #d1e7dd;
+    color: #1b4d3e;
+    border: 1px solid #a3cfbb;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.mensagem-digite{
+    margin-top: 15px;
+    padding: 10px;
+    color: #0d47a1;          
+    background-color: #b5e0ff;
+    border: 1px solid #90caf5; 
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.mensagem-erro{
+    margin-top: 15px;
+    padding: 10px;
+    color: #842029;            
+    background-color: #f8d7da;   
+    border: 1px solid #f5c2c7; 
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.modal-fundo {
+    display: none; /* Escondida por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Criamos uma classe extra para quando ela estiver aberta */
+.modal-fundo.ativa {
+    display: flex; /* Torna visível e centralizada */
+}
+
+/* Caixinha branca centralizada */
+.modal-caixa {
+    background-color: #ffffff;
+    padding: 25px 35px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Fredoka', 'Segoe UI', sans-serif;
+    max-width: 320px;
+    width: 90%;
+}
+
+.modal-caixa p {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Alinhamento dos botões dentro da modal */
+.modal-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-modal {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: opacity 0.2s;
+}
+
+.btn-modal:hover {
+    opacity: 0.85;
+}
+
+/* Estilo do botão "Sim, apagar" (Vermelho pastel) */
+.btn-sim {
+    background-color: #ef5b5b;
+    color: #f1f1f1;
+    border: 1px solid #f5c2c7;
+}
+
+/* Estilo do botão "Cancelar" (Cinza neutro) */
+.btn-nao {
+    background-color: #e2e3e5;
+    color: #383d41;
+    border: 1px solid #d6dbd8;
+}
