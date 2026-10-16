@@ -17,7 +17,6 @@ def ResolveSudoku():
         if not tabuleiro:
             return jsonify({'erro': 'Nenhum tabuleiro enviado'}), 400
 
-        # Roda o seu algoritmo de resolucao.py
         tabuleiro_resolvido = mainResolveSudoku(tabuleiro)
 
         return jsonify({
